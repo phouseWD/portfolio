@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  height: 70px;
+  box-sizing: border-box;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+}
+
+#logo {
+  height: 50px;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  text-decoration: underline;
+  margin: auto 15px;
+}
+
+main {
+  position: relative;
+  top: 72px;
+}
+
+#mission {
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#mission::before {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 700px;
+  background-image: url("/TeaCozy Assets/img-mission-background.webp");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1; /* Ensure the background image is behind other content */
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+h2,
+h4 {
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+}
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#menu-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-items img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+#locations-container {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+#locations-container h2{
+    background-color: transparent;
+}
+#locations-container::before {
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 500px;
+  background-image: url("/TeaCozy Assets/img-locations-background.webp");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1; /* Ensure the background image is behind other content */
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+#locations-flex {
+  display: flex;
+}
+
+.locations {
+    margin: auto 40px;
+    background-color: black;
+    width: 300px;
+}
