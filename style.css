@@ -1,3 +1,49 @@
-* {
-  border: 2px solid hotpink;
+*{
+  border: 1px solid hotpink;
+}
+
+body {
+  background-color: rgb(149, 148, 148);
+}
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: repeat(10, 75px);
+  grid-template-columns: repeat(10, 75px);
+}
+
+.item {
+  background-color: rgb(81, 151, 64);
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.item1 {
+  grid-row: 1 / 5;
+  grid-column: 1 / 5;
+  z-index: 1;
+}
+
+.item2 {
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+}
+
+.item3 {
+  grid-row: 3 / 7;
+  grid-column: 3 / 7;
+}
+
+.item4 {
+  grid-row: 4 / 8;
+  grid-column: 4 / 8;
+}
+
+.item5 {
+  grid-row: 5/ 9;
+  grid-column: 5 / 9;
+}
+
+.info {
+  display: hidden;
 }
